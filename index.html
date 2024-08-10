@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPER LEAGUE FOOTBALL 2024</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Styles */
+        header {
+            background: url('background.jpg') no-repeat center center;
+            background-size: cover;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            color: #fff;
+        }
+
+        header img {
+            height: 70px;
+            margin-left: 20px;
+        }
+
+        /* Navigation Menu */
+        nav {
+            background-color: transparent;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ddd;
+        }
+
+        nav ul li a:active {
+            color: #bbb;
+        }
+
+        /* Main Content Section */
+        main {
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin: 120px auto 20px auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        #about-event p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        #participating-teams {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .team {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            width: 80%;
+        }
+
+        .team img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+
+        .team h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .team p {
+            color: #777;
+            font-size: 1em;
+        }
+
+        #schedule table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        #schedule table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        #schedule th, #schedule td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        #schedule th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        #schedule td {
+            background-color: #f8f8f8;
+        }
+
+        #tickets p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        /* Footer Styles */
+        footer {
+            background: url('background.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 20px 0;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        footer p {
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        footer img {
+            height: 50px;
+            margin-right: 20px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="logo.jpg" alt="Event Logo">
+        <h1>SUPER LEAGUE FOOTBALL 2024</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#participating-teams">Teams</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main id="home">
+
+        <!-- About Event Section -->
+        <section id="about-event">
+            <h2>About the Event</h2>
+            <p>Join us for the SUPER LEAGUE FOOTBALL 2024, a spectacular football tournament showcasing the best university teams. The event will take place on August 25th, 2024, at the University Stadium. Don’t miss out on exciting matches, vibrant fan zones, and special attractions that make this event a must-see!</p>
+        </section>
+
+        <!-- Participating Teams Section -->
+        <section id="participating-teams">
+            <h2>Participating Teams</h2>
+
+            <div class="team">
+                <img src="team1.jpg" alt="Team 1 Logo">
+                <h3>Thunder Strikers</h3>
+                <p>The Thunder Strikers are known for their aggressive gameplay and swift attacks, making them one of the most feared teams in the league.</p>
+            </div>
+
+            <div class="team">
+                <img src="team2.jpg" alt="Team 2 Logo">
+                <h3>Blaze Warriors</h3>
+                <p>The Blaze Warriors bring a perfect mix of defense and offense, with a history of turning the tide in their favor during crucial moments.</p>
+            </div>
+
+            <div class="team">
+                <img src="team3.jpg" alt="Team 3 Logo">
+                <h3>Storm Breakers</h3>
+                <p>The Storm Breakers are the underdogs, known for their resilience and ability to surprise even the strongest opponents.</p>
+            </div>
+
+            <!-- Add more teams as needed -->
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule">
+            <h2>Event Schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Match</th>
+                        <th>Venue</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>August 25, 2024</td>
+                        <td>10:00 AM</td>
+                        <td>Thunder Strikers vs Blaze Warriors</td>
+                        <td>University Stadium</td>
+                    </tr>
+                    <tr>
+                        <td>August 26, 2024</td>
+                        <td>1:00 PM</td>
+                        <td>Storm Breakers vs Thunder Strikers</td>
+                        <td>University Stadium</td>
+                    </tr>
+                    <tr>
+                        <td>August 27, 2024</td>
+                        <td>1:00 PM</td>
+                        <td>Storm Breakers vs Blaze Warriors</td>
+                        <td>University Stadium</td>
+                    </tr>
+                    <!-- Add more schedule rows as needed -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Tickets Section -->
+        <section id="tickets">
+            <h2>Tickets</h2>
+            <p>Purchase your tickets online through our official website or buy them at the stadium on the day of the event. Ticket prices start at $20 for general admission and $50 for VIP seating. Don’t miss out on this thrilling sports event!</p>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact us at <a href="mailto:support@universityevent.com">support@universityevent.com</a> | Follow us on 
+            <a href="https://twitter.com/universityevent" target="_blank
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact us at <a href="mailto:support@universityevent.com">support@universityevent.com</a> | Follow us on 
+            <a href="https://twitter.com/universityevent" target="_blank">Twitter</a>, 
+            <a href="https://facebook.com/universityevent" target="_blank">Facebook</a>, and 
+            <a href="https://instagram.com/universityevent" target="_blank">Instagram</a>.
+        </p>
+        <img src="logo.jpg" alt="Event Logo">
+    </footer>
+
+</body>
+</html>
+
